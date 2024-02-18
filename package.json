@@ -1,0 +1,15 @@
+{
+  "name": "nv",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "dev:volta": "volta run --node 18.19.1 node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.19"
+  }
+}
