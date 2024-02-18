@@ -2,14 +2,25 @@
   "name": "nv",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "bin": {
+    "volta-node-version": "./dist/index.js"
+  },
   "scripts": {
-    "dev": "node index.js",
-    "dev:volta": "volta run --node 18.19.1 node index.js"
+    "build": "tsup",
+    "dev": "node ./dist/index.js dev ",
+    "dev:volta": "volta run --node 18.19.1 node ./dist/index.js dev"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.11.19"
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@types/node": "^20.11.19",
+    "eslint": "^8.56.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "citty": "^0.1.6",
+    "consola": "^3.2.3"
   }
 }
